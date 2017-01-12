@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title> Concept Notebook </title>
+      <link href="style.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,900italic' rel='stylesheet' type='text/css'>
+   </head>
+   <body>
+      <div id="wrapper">
+         <section id="index">
+            <h1>  Concept Notebook </h1>
+            <h2>  INDEX   </h2>
+            <ol type="I">
+               <li class="index_list">
+                  <a href="#lesson1">Lesson 1: Webpages, Documents, and Structure</a>
+                  <ul>
+                     <li> <a href="#topicA1"> The Basics of the Web and HTML           </a>  </li>
+                     <li> <a href="#topicB1"> Creating a Structured Document with HTML </a>  </li>
+                     <li> <a href="#topicC1"> Adding CSS Style to HTML Structure       </a>  </li>
+                  </ul>
+               </li>
+               <li class="index_list">
+                  <a href="#lesson2">Lesson 2: Telling Computers What To Do</a>
+                  <ul>
+                     <li> <a href="#topicA2"> Introduction to Serious Programming       </a>  </li>
+                     <li> <a href="#topicB2"> Variables and Strings                     </a>  </li>
+                     <li> <a href="#topicC2"> Input-->Function-->Output                 </a>  </li>
+                     <li> <a href="#topicD2"> Structured Data: Lists and For Loops      </a>  </li>
+                  </ul>
+               </li>
+               <li class="index_list">
+                  <a href="#lesson3">Lesson 3: The Power Of Abstraction</a>
+                  <ul>
+                     <li> <a href="#topicA3"> Functions        </a>  </li>
+                     <li> <a href="#topicB3"> Use Classes      </a>  </li>
+                     <li> <a href="#topicC3"> Make Classes     </a>  </li>
+                  </ul>
+               </li>
+            </ol>
+         </section>
+         <section class="box" id="lesson1">
+            <h2> Webpages, Documents, and Structure </h2>
+            <div id="topicA1" >
+               <h3>The Basics of the Web and HTML </h3>
+               <section class="section">
+                 <div>
+                   <h4><b>How the Web Works</b></h4>
+                   <p><em>Hyper Text Markup Language</em> is the language of the internet. HTML is interpreted by a computer's browser. These documents reside on servers. When a user accesses a webpage their computer sends an HTTP request to the server. The server finds the document and sends it across the internet where it is interpreted by the user's browser. The web is a collection of HTML documents. There are approximately 30 billion pages on the World Wide Web.</p>
+                 </div>
+                 <br>
+                 <div>
+                   <img src="web.png" alt="working of web" />
+                 </div>
+                 <br>
+                 <div>
+                   <h4><b>HTML Markup</b></h4>
+                   <ul>
+                     <li>Text Content- "What you see"</li>
+                     <li>Markup- "What it looks like" references to other documents e.g. images and video and links to other pages.</li>
+                     <li>Element-An element is comprised of an opening tag, content, and a closing tag.</li>
+                   </ul>
+                 </div>
+                 <div>
+                   <h4><b>HTML Attributes</b></h4>
+                   <ul>
+                     <li>Tag Attribute<code>&lt; tag attribute="value" &gt; contents&lt;/tag&gt;</code></li>
+                     <li>Anchor Tag <code>&lt;a&gt;</code>- creates a link</li>
+                     <li>Creating a link <code>&lt;a href="www.reddit.com" &gt;derp&lt;/a&gt;</code>
+                     <a href="www.reddit.com">derp</a></li>
+                     <li> image tag- <code>&lt;img&gt;&lt;img src="url of image" alt="text"&gt;</code></li>
+                   </ul>
+                 </div>
+                 <div>
+                   <h4><b>White Space</b></h4>
+                   <ul>
+                     <li>HTML renders all white space as a single space</li>
+                     <li><code>&lt;br&gt;</code> break (void tag does not need close)</li>
+                     <li><code>&lt;p&gt; </code>paragraph tag<code>&lt;/p&gt;</code>(Requires Close)</li>
+                   </ul>
+                 </div>
+                 <div>
+                   <h4><b>Inline vs. Block</b></h4>
+                   <ul>
+                     <li><code>&lt;br&gt;</code>tag is inline</li>
+                     <li><code>&lt;p&gt;</code> tag is a block element. It creates an "invisible box" around the content.</li>
+                     <li><code>&lt;span&gt;</code><code>&lt;/span&gt;</code>- inline</li>
+                     <li><code>&lt;div&gt;</code><code>&lt;/div&gt;</code>- block</li>
+                   </ul>
+                 </div>
+               </section>
+            </div>
+            <div id="topicB1">
+              <h3>Creating a Structured Document with HTML</h3>
+              <section class ="section">
+                <div>
+                  <h4><b>Tree Structure of HTML</b></h4>
+                  <ul>
+                    <li>HTML has a tree like structure, wth elements nested inside other elements. Link to <a href="http://en.wikipedia.org/wiki/Tree_structure">Wikipedia article on Tree Structure</a>. When programmers talk about the DOM(Document Object Model) they are talking about the tree like structure of a web page.</li>
+                    <li>HTML controls the "structure" of the web page</li>
+                    <li>CSS controls the "style" of a page (How it looks)</li>
+                    <li>CSS helps web designers avoid repetition. Avoiding repetition helps to keep code "clean" and more easily modifiable.</li>
+                    <li>Boxes- webpages are composed of "boxes". &lt;div&gt; tag defines boxes. Class attributes are the labels on boxes.
+                  </ul>
+                </div>
+                <div>
+                  <h4><b>Avoiding Repetition</b></h4>
+                  <ul>
+                    <li>Avoiding errors-The less you do it, the less chance you have of making errors.</li>
+                    <li>Consistency-Reducing repetition makes pages more consistent and easier to change.
+                  </ul>
+                </div>
+                <div>
+                  <h4><b>Text Editors and Dev Tools</b></h4>
+                  <ul>
+                    <li><a href="http://Scratchpad.io" target="_blank">Scratchpad</a></li>
+                    <li><a href="http://codepen.io" target="_blank">Codepen</a></li>
+                    <li><a href="http://www.sublimetext.com" target="_blank">Sublime</a></li>
+                  </ul>
+                  <p>Web Browsers contain developer tools that allow access to web page coding.</p>
+                </div>
+              </section>
+            </div>
+            <div id="topicC1">
+              <h3>Creating a Structured Document with HTML</h3>
+              <section class="section">
+                <div>
+                  <h4><b>Understanding CSS</b></h4>
+                    <p>CSS is code written to control the "style" of HTML elements.</p>
+                    <code class="code">
+                    h1 {<br>
+                    background-color : black;<br>
+                    color: white;<br>
+                    }
+                    </code>
+                  <p><code>h1</code> is a <b>selector</b>. This tells the browser what to apply the rules too. The rules are between the <code>{}</code> braces.<code>background-color : black</code> is a <b>rule</b>. <code>background-color</code> is an <b>attribute</b> and <code>black</code> is the <b>value</b> of that attribute.
+                   To add style to specific <code>h1</code> or other element use <b>class selectors</b>. Class selectors are written in the format <code>.class-name</code></p>
+                </div><!--Understanding CSS-->
+                <div>
+                  <h4><b>Adding CSS to a webpage</b></h4>
+                  <p>CSS can be added in three ways.</p>
+                  <ol>
+                    <li>Write CSS in the <code>&lt;head&gt;</code> of your HTML. Best for small projects and testing.
+                    <li>Link your HTML to a separate CSS file. Most organized method and best for larger projects.
+                    <ol>
+                       <li>Write all of your structural HTML in one file (let's call it <code>main.html</code>).
+                       <li>In a separate file (let's call it <code>main.css</code>), put all of your CSS code.
+                       <li>Add a <code>&lt;head&gt;</code> element to the top of your HTML.
+                       <li>Add a <code>&lt;link&gt;</code> tag inside the <code>&lt;head&gt;</code> element. Since <code>&lt;link&gt;</code> is a "void tag" you don't need to add a closing <code>&lt;/link&gt;</code>.
+                       <li>Add the following attributes to your <code>&lt;link rel="stylesheet"  type="text/css"  href="main.css"&gt;</code>
+                    </ol>
+                    <li>Write your style inline with your HTML- This results in a lot of repeated code.
+                  </ol>
+                </div>
+              </section>
+            </div>
+         </section>
+         <section class="box" id="lesson2">
+            <h2> Telling Computers What To Do </h2>
+            <div id="topicA2">
+              <h3>Introduction to Serious Programming</h3>
+              <section class="section">
+                <div>
+                  <h4>Computer</h4>
+                    <p>A computer is a machine that can do almost anything. However, it must be given specific instructions on how to accomplish its task.</p>
+                </div>
+                <div>
+                  <h4>Program</h4>
+                    <p>A program is a specific sequence of instructions that tell a computer what to do.</p>
+                </div>
+                <div>
+                  <h4>Program Language</h4>
+                    <p>A program languages are used by programmers to write programs. Languages can be <em>interpreted</em> or <em>compiled</em>. Python is interpreted, which means it uses a seperate program to convert the code to code the computer can understand. Compiled language, such as C++, create an executable file that does not need a compiler to break the program down so the computer can understand it.</p>
+                </div>
+                <div>
+                  <h4>Python</h4>
+                    <p>Python is an interpreted language. It is named after Monty Python.</p>
+                </div>
+                <div>
+                  <h4>Grammar</h4>
+                    <p>Programming languages have a specific grammar just like human or natural languages. A computer can only read code written in perfect grammar, other wise it will not run.</p>
+                </div>
+                <div>
+                  <h4>Recursive Definition</h4>
+                    <p>A recursive definition requires one rule where we can keep going and one where we can stop.</p>
+                </div>
+              </section>
+            </div>
+            <div id="topicB2">
+              <h3>Variables and Strings</h3>
+              <section class="section">
+                <div>
+                  <h4>Python Variables</h4>
+                    <p>Variables allow programmer to assign a name values. This is done through an assignment statement. <code>name=expression</code>. Variable make code easier to read. So instead of using 299792458 a programer can assign this value to a variable such as <code>speed_of_light = 299792458</code></p>
+                    <ul>
+                      <li>In math the <code>A = B </code> means "the same as", in Python it means you assigned the value of B to A.</li>
+                      <li>Variables allow for more consistent and and readable code.</li>
+                      <li>Variables allow programmers a place to store data.</li>
+                    </ul>
+                </div>
+                <div>
+                  <h4>Python String's</h4>
+                  <p>Computers are not just limited to numbers. Strings in Python are a sequence of characters surronded by qoutes.</p>
+                    <ul>
+                      <li>Valid string <code>"Hello"</code></li>
+                      <li>Valid string <code>'Hello'</code></li>
+                      <li>Valid string <code>"John said'Hello'"</code></li>
+                      <li>Invalid string<code>"Hello'</code></li>
+                      <li><code>+</code>concantenates or staples two strings together</li>
+                    </ul>
+                </div>
+                <div>
+                  <h4>Find Method</h4>
+                  <p>Python has a built in method to find a string within another string. This method is utilized in this manner <code>&lt;string&gt;.find(&lt;string&gt;)</code>. The second string is the string that we want to find in the first string. Python responds with the position of the first occurance of that string. If it is not found, Python responds with <code>-1</code>.</p>
+
+                      <code class="code">
+                        print "Example 1: Finding substrings in a string"<br>
+                        print "test".find("te")<br>
+                        print "test".find("st")<br>
+                        print "test"[2:]<br>
+                        print "Example 2: Finding substrings in a string which is stored as a variable"<br>
+                        my_string = "test"<br>
+                        print my_string.find("te")<br>
+                        print my_string.find("st")<br>
+                        print my_string[2:]<br>
+
+                        print "Example 3: Printing out everything after a certain substring"<br>
+                        my_string = "My favorite color: blue"<br>
+                        color_start_location = my_string.find("color:")<br>
+                        favorite_color = my_string[color_start_location:]<br>
+                        print favorite_color # oops, this line prints out 'color: ' as well...<br>
+                        print favorite_color[7:] # this fixes it!<br>
+
+                        print "Example 4: Other interesting things about string.find()..."<br>
+                        print "text".find("text") # prints 0<br>
+                        print "text".find("Text") # prints -1<br>
+                        print "text".find(" ")    # prints -1<br>
+                        print "text".find("")     # prints 0<br>
+                      </code>
+
+                    Resulting output would be:
+                      <code class="code">
+                        Example 1: Finding substrings in a string<br>
+                        0<br>
+                        2<br>
+                        st<br>
+                        Example 2: Finding substrings in a string which is stored as a variable<br>
+                        0<br>
+                        2<br>
+                        st<br>
+                        Example 3: Printing out everything after a certain substring<br>
+                        color: blue<br>
+                        blue<br>
+                        Example 4: Other interesting things about string.find()...<br>
+                        0<br>
+                        -1<br>
+                        0<br>
+                        -1<br>
+                      </code>
+                      <br>
+                  </div>
+              </section>
+            </div>
+            <div id="topicC2">
+              <h3>Input-->Function-->Output</h3>
+              <section class="section">
+                <div>
+                  <h4>Functions or "Procedures"</h4>
+                  <p>A function is something that takes input, does something to that input, and then produces output. The value of a function is that it allows programmers to do reuse code, because once it is defined you don't have to define it again. To create a function in Python you use the following method.</p>
+                    <code class="code">
+                      def square(x): #use keyword def, followed by name, and then parentheses around the parameters<br>
+                      answer = x * x<br>
+                      return answer<br>
+
+                      # to call the function, write the name and give it values<br>
+                      print square(4)<br>
+                      >>>16<br>
+                    </code>
+                  <p>The <code>return</code> keyword is vital to the function because it tells Python what it should produce as an output.</p>
+                </div>
+              </section>
+            </div>
+            <div id="topicD2">
+              <h3>Structured Data: Lists and For Loops</h3>
+              <section class="section">
+                <div>
+                  <h4>Structured Data</h4>
+                  <p>Strings are a sequence of characters, while lists are a sequence of anything. Lists are created by using <code>[]</code> .
+                  Lists can be accessed and sliced just like strings :</p>
+                      <code class="code">
+                        number_list = [3.14159, 2.71828, 1.61803]<br>
+                        pi = number_list[0]<br>
+                        not_pi = number_list[1:]<br>
+                        print pi<br>
+                        print not_pi<br>
+                        <br>
+                        Output:<br>
+
+                        3.14159<br>
+                        [2.71828, 1.61803]<br>
+                      </code>
+                    <p>Lists can be "nested" or contain lists within lists. These lists can be mutated or modified.</p>
+                      <code class="code">
+                        nested_list = [['HTML', 'Hypertext Markup Language forms the structure of webpages'],<br>
+                                       ['Python', 'Python is a programming language'],<br>
+                                       ['CSS' , 'Cascading Style Sheets give pages style'],<br>
+                                       ['Lists', 'Lists are a data structure that let you organize information']]<br>
+
+                        first_concept = nested_list[0]<br>
+
+                        first_title = first_concept[0]<br>
+                        first_description = first_concept[1]<br>
+                        print first_title<br>
+                        print first_description<br>
+                        <br>
+                        Output:<br>
+                        Hypertext Markup Language forms the structure of webpages<br>
+                        HTML<br>
+                      </code>
+                    <p>
+                      <b>Aliasing</b> is having two different ways to refer to the same variable. Using lists and list methods allow a programmer to build very complex data strutures.
+                    </p>
+                </div>
+                <div>
+                  <h4>List Operations</h4>
+                  <ol>
+                    <li>List append adds an element to a list. <code>list1 = [0,1,2]</code>--&gt; <code>list1.append[3]</code> = <code> [0,1,2,3]</code>.
+                    <li>Plus staples two lists together <code>[0,1] + [2,3]</code> = <code>[0,1,2,3]</code>
+                    <li><code>len</code> provides the number of elements within a list.
+                  </ol>
+                </div>
+              </section>
+            </div>
+            <div>
+              <h4>Loops on Lists</h4>
+              <p>The while loop can be used to loop through the elements of a list. The code below will print out the elements of the list.</p>
+                  <code class="code">
+                    def print_all_elements(p):<br>
+                      &emsp;i=0<br>
+                      &emsp; while i&lt;len(p):<br>
+                        &emsp;&emsp; print p[i]<br>
+                        &emsp;&emsp; i=i+1<br>
+                  </code>
+              <p>The for loop can also be used to loop through the elements of a list.This used less code that the while method.</p>
+                  <code class="code">
+                    def print_all_elements(p):<br>
+                      &emsp;for e in p:<br>
+                      &emsp;&emsp;print e<br>
+                  </code>
+              <p>The built-in method <b>index</b> gives the position of the first match within a list of a particular element.</p>
+                <code class="code">
+                  def find_element(list,value):<br>
+                    &emsp;for e in list:<br>
+                        &emsp;&emsp;if e == value:<br>
+                          &emsp;&emsp;&emsp;return list.index(e)<br>
+                    &emsp;return -1<br>
+
+                    print find_element([1,2,3],3)<br>
+                    #>>> 2<br>
+
+                    print find_element(['alpha','beta'],'gamma')<br>
+                    #>>> -1<br>
+                </code>
+                <br>
+            </div>
+         </section>
+         <section class="box" id="lesson3">
+            <h2> The Power Of Abstraction</h2>
+            <div id="topicA3">
+              <h3>Functions</h3>
+              <section class="section">
+                <div>
+            			<h4>Python Standard Library</h4>
+            			<p>The Python Standard Library contains built-in functions that do not require the use of the import command.
+                  Python also contains modules with built in functions that must be "imported" in order to be used. <a href="https://docs.python.org/2.7/library/intro.html">Python Standard Library</a>
+                  A module is a file that contains functions or executable and can be <em>imported</em> into other modules or the main module.</p>
+        		    </div>
+                <div>
+                  <h4>Abstraction</h4>
+                  <p>Abstraction in programming is a way of managing complexity. The specific way a function works are hidden behind documentation and the details
+                  are hidden from the programmer. This allows the programmer to focus on the program we want to write. <a href="http://en.wikipedia.org/wiki/Abstraction_%28computer_science%29">Wikipedia Article on Abstraction</a></p>
+                </div>
+              </section>
+            </div>
+            <div id="topicB3">
+              <h3>Use Classes</h3>
+                <section class="section">
+                <p>Within the Python Standard Library are files not only with functions, like in the previous section, there are also files with Classes.
+                  Classes are neatly packaged boxes that put things together very well. The following is an example of the Python Module Turtle</p>
+                  <code class="code">
+                    brad = turtle.Turtle() # Creates an instance of the class "Turtle" named brad<br>
+                    brad.shape("turtle")   # Shape of a turtle<br>
+                    brad.color("yellow")   # Color will be yellow<br>
+                    brad.speed(2)          # Sets the speed<br>
+                  </code>
+                  <b>Class</b>- Think of it as a blueprint of a building.<br>
+                  <b>Object</b> - Instances or examples of that blueprint.<br>
+                  <p> When calling webbrowser.open() we are simply calling a function. When calling turtle.Turtle() it actually calls the init
+                    function within turtle and creates space within memory that did not exist before.</p>
+                </section>
+            </div>
+            <div id="topicC3">
+              <h3>Make Classes</h3>
+              <section class="section">
+                <div>
+                  <p>Programmers are not limited to just classes that are found externally, or in the Python Standard Library. Programmers can make
+                  classes to perform whatever function they need to do.</p>
+                </div>
+                <div>
+                  <p><b> Creating a Class</b></p>
+                  <ol>
+                    <li> Decide on how Class should be used and what parameters it needs.(oversimplified)</li>
+                    <li> Create a new file to write your code for the class. File will be imported into your program like previous examples.
+                    <li> Use Python keyword <code>class</code></li>
+                    <li> Name the class and capitalize the first letter according to <a href="http://google-styleguide.googlecode.com/svn/trunk/pyguide.html"> Google Style Guide</a></li>
+                    <li> Follow with (): <code>className():</code></li>
+                  </ol>
+                </div>
+                <div>
+                  <p><b>def_init_</b></p>
+                  <ol>
+                    <li> <code>def_init_(self):</code> is a special function (<b>Contructor</b>)within Python to initilize the newly created empty object.</li>
+                    <li> <code>(self)</code> is the commonly used Python convention for referring to the instance's attribute.</li>
+                    <li> Use <code>self</code> instead of another variable so that it is not mistaken for a local variable.</li>
+                    <li> <code>self</code> is an instance variable, not a local variable.</li>
+                  </ol>
+                </div>
+                <div>
+                  <p><b>Using your Created Class</b></p>
+                  <ol>
+                    <li> <code>import class</code> into program</li>
+                  </ol>
+                </div>
+                <div>
+                  <p><b>Vocabulary Recap</b><p>
+                  <ol>
+                    <li><b>Class</b>- keyword allows us to make classes(blueprints). Class can have both data and methods.</li>
+                    <li><b>Instances</b>are multiple versions of a class.</li>
+                    <li>The <b>Constructor</b> <code>def_init_</code> initilaizes all of the data associated wih the instance.</li>
+                    <li><code>self</code> is itself or the instance in question.</li>
+                    <li><b>instance variables</b> are the variables associated with a specific instance. Unique to the object.</li>
+                    <li><b>instance methods</b> are the functions within the class that are associated with an instance and have the first argument as <code>self</code>.</li>
+                  </ol>
+                </div>
+              </section>
+            </div>
+         </section>
+      </div>
+   </body>
+</html>
