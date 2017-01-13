@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Small Business</string>
+    <string name="name">Aroma Multi Cusine \nFamily Restaurant</string>
+    <string name="description">A big range of variety of cuisines are prepared and served here. </string>
+    <string name="address">
+       Opp. Bahu Plaza, Gandhi Nagar,\n Jammu, Jammu and Kashmir-180004
+    </string>
+    <string name="phone"> 0191-247-9290  </string>
+    <string name="timings">10:00 AM to 9:30 PM</string>
+</resources>
